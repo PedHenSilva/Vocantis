@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Vocantis</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/pages/cursos.css">
+    <link rel="stylesheet" href="assets/css/pages/cadastro.css">
+    <link rel="stylesheet" href="assets/css/global/loading.css">
+    
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dis/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="manifest" href="img/favicon/site.webmanifest"/>
+
+
+</head>
+<body>
+    
+    <div class="preloader" id="preloader">
+  		<div class="loader" id="loader"></div>
+	</div>
+
+    <header id="pag-atual">
+        <figure>
+            <img src="img/Vocantis Logo.svg" alt="logo">
+        </figure>
+            <nav>
+                <a href="index.html" id="pag-atual">Início</a>
+                <a href="calendário.html">Calendário</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+         <a href="cadastro.html">
+        <button class="btn-gradiente" type="button">Começar Agora</button>
+        </a>
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <section class="hero">
+        <h1>Cadastre-se no <br><span>Vocantis</span></h1>
+        <p>Comece sua jornada de descoberta vocacional. Preencha seus dados<br>
+        para acessar o teste completo e descobrir seu perfil profissional.</p>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="form-area">
+        <form class="card-cadastro">
+
+            <!-- SEÇÃO 1 -->
+            <h2 class="section-title">
+                <span class="icon-box">🔒</span>
+                Informações Pessoais
+            </h2>
+
+            <div class="grid-2">
+                <div class="input-group">
+                    <label>Nome Completo</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="input-group">
+                    <label>E-mail</label>
+                    <input id="email" type="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Telefone</label>
+                    <input id="telefone" type="text" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="input-group">
+                    <label>Idade</label>
+                    <input id="idade" type="number" placeholder="Sua idade">
+                </div>
+
+                <div class="input-group">
+                    <label>Cidade</label>
+                    <input id="cidade" type="text" placeholder="Sua cidade">
+                </div>
+
+                <div class="input-group">
+                    <label>Escolaridade</label>
+                    <select id="escolaridade"> 
+                        <option>Ensino Médio Completo</option>
+                        <option>Técnico</option>
+                        <option>Graduação Completa</option>
+                        <option>Graduação Incompleta</option>
+                        <option>Pós-Graduado</option>
+                        <option>Mestre</option>
+                        <option>Doutor</option>
+                        <option>Prefiro não dizer</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- SEÇÃO 2 -->
+            <h2 id="seguranca" class="section-title">
+                <span class="icon-box">🛡️</span>
+                Segurança da Conta
+            </h2>
+
+            <div id="grid-senha" class="grid-2">
+                <div class="input-group">
+                    <label>Senha</label>
+                    <input id="senha" type="password" placeholder="Crie uma senha segura">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmar Senha</label>
+                    <input id="confirmarSenha" type="password" placeholder="Confirme sua senha">
+                </div>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox">
+                <span>
+                    Li e aceito os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.
+                </span>
+            </label>
+
+            <!-- BOTÕES -->
+            <div class="btn-row">
+                <a href="#" class="btn-primary" id="btnCriarConta">Criar Conta →</a>
+                <a href="index.html" class="btn-outline">Voltar</a>
+            </div>
+
+            <p class="login-link">
+                Já tem uma conta? <a href="#">Faça login</a>
+            </p>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <article class="footer-content">
+            <section class="col-1">
+                <div class="logo">
+                    <img src="img/Vocantis Logo-cropped.svg" alt="Logo">
+                </div>
+                <p>Plataforma que conecta você aos <br>melhores cursos e oportunidades <br>profissionais.</p>
+                <div class="socials">
+                    <div class="socials-icons">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="socials-icons">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </div>
+                    <div class="socials-icons">
+                        <img src="img/linkedin.svg" alt="Linkedin">
+                    </div>
+                    <a href="https://github.com/PedHenSilva/Vocantis">
+                        <div class="socials-icons">
+                            <img src="img/github.svg" alt="GitHub">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="col-2">
+                <h3>Links Rápidos</h3>
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="calendário.html">Calendário</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </section>
+
+            <section class="col-3">
+                <h3>Contato</h3>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/mail.svg" alt="Email">
+                    </div>
+                    <li>contato@vocantis.com.br</li>
+                </ul>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/phone.svg" alt="Email">
+                    </div>
+                    <li>(11) 3333-4444</li>
+                </ul>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/map-pin.svg" alt="Email">
+                    </div>
+                    <li>Diadema, SP - Brasil</li>
+                </ul>
+            </section>
+
+            <section class="col-4">
+                <h3>Parceria</h3>
+                <div class="parceria">
+                    <div class="logo-cps">
+                        <img src="img/logo_cps_versao_br.png" alt="CentroPaulaSouza">
+                        <h4>Centro Paula Souza</h4>
+                    </div>
+                    <p>Em parceria com o Centro Paula Souza, oferecemos acesso aos melhores cursos técnicos e superiores.</p>
+                    <div class="link-cps">  
+                        <a href="#">
+                            Saiba Mais
+                            <img src="img/external-link.svg" alt="IconLink">
+                        </a>
+                    </div>  
+                </div>
+            </section>
+        </article>
+
+        <section class="burocracia">
+            <p>© 2025 Vocantis. Todos os direitos reservados.</p>
+            
+            <div class="politicas">
+                <p>Política de Privacidade</p>
+                <p>Termos de Uso</p>
+                <p>Cookies</p>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Cadastro -->
+    <script src="assets/js/cadastro.js"></script>
+
+    <!-- Loading -->
+    <script src="assets/js/script_preloader.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
