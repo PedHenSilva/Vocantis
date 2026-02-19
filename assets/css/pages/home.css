@@ -861,7 +861,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 500px;
 
     color: var(--color-Branco);
     border-top: #374151 1px solid;
@@ -902,4 +901,5 @@ footer {
     .heading .lead-content img {
         margin-left: auto;
     }
+
 }
