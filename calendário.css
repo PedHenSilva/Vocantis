@@ -1,0 +1,259 @@
+
+.pagina-calendario {
+    background-image: url(../../../img/Gradient.png), url(../../../img/Background.png), linear-gradient(130deg, var(--color-Azulfundo1), var(--color-Azulfundo2), #7f1d1de3);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container-calendario {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px clamp(24px, 5vw, 104px);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.calendario-titulo {
+    text-align: center;
+    color: var(--color-Branco);
+    margin-bottom: 16px;
+}
+
+.calendario-titulo h1 {
+    font-family: 'Montserrat B';
+    font-size: clamp(36px, 4vw, 48px);
+    margin-bottom: 8px;
+}
+
+.calendario-titulo p {
+    font-family: 'Nunito R';
+    font-size: 18px;
+    color: var(--color-Cinza);
+}
+
+.calendario-filtros {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.calendario-filtros .filtro-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.calendario-filtros label {
+    font-family: 'Nunito M';
+    font-size: 14px;
+    color: var(--color-Cinza);
+    padding-left: 8px;
+}
+
+.calendario-filtros select {
+    background-color: var(--color-Azulfundo1);
+    border: 1px solid #374151;
+    border-radius: 12px;
+    height: 52px;
+    width: 100%;
+    padding: 0 16px;
+    color: var(--color-Branco);
+    font-family: 'Nunito R';
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../../../img/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    cursor: pointer;
+}
+
+.calendario-filtros select:focus {
+    border-color: var(--color-LaranjaSuave);
+    box-shadow: 0 0 10px rgba(251, 146, 60, 0.2);
+    outline: none;
+}
+
+
+.lista-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-evento {
+    background-color: var(--color-Azulfundo2);
+    border-radius: 24px;
+    padding: clamp(24px, 4vw, 32px);
+    flex-wrap: wrap;
+    border: 1px solid #374151;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.card-evento:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-LaranjaSuave);
+    box-shadow: 0 0 25px rgba(251, 146, 60, 0.15);
+}
+
+.evento-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.evento-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.evento-info h3 {
+    font-family: 'Montserrat B';
+    font-size: 20px;
+    color: var(--color-Branco);
+    margin-bottom: 8px;
+}
+
+.evento-info p {
+    font-family: 'Nunito R';
+    font-size: 14px;
+    color: var(--color-Cinza);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 600px;
+}
+
+.evento-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.btn-link {
+    color: var(--color-Branco);
+    text-decoration: none;
+    font-size: 15px;
+    background: linear-gradient(45deg, var(--color-RedIntenso), var(--color-LaranjaSuave));
+    font-family: 'Montserrat B';
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-width: 222px;
+    height: 40px;
+}
+
+.btn-link:hover {
+    scale: calc(1.0);
+    box-shadow: 0 0 25px rgba(255, 70, 20, 0.3);
+    background: linear-gradient(90deg, var(--color-RedIntenso), var(--color-LaranjaIntenso));
+}
+
+.btn-link img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.evento-data {
+    background-color: var(--color-Azulfundo1);
+    border: 1px solid #374151;
+    border-radius: 16px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evento-data strong {
+    font-family: 'Montserrat B';
+    font-size: 36px;
+    color: var(--color-Branco);
+    line-height: 1.1;
+}
+
+.evento-data span {
+    font-family: 'Nunito M';
+    font-size: 16px;
+    color: var(--color-Cinza);
+    text-transform: uppercase;
+}
+
+.cta-calendario {
+    background-color: var(--color-Azulfundo2);
+    text-align: center;
+    padding: 32px 0;
+    border-radius: 24px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cta-calendario h2 {
+    font-family: 'Montserrat B';
+    font-size: 24px;
+    color: var(--color-Branco);
+    margin-bottom: 8px;
+}
+
+.cta-calendario p {
+    font-family: 'Nunito R';
+    font-size: 16px;
+    color: var(--color-Cinza);
+    margin-bottom: 32px;
+}
+
+.btn-contato {
+    width: 244px;
+    height: 52px;
+    color: var(--color-RedSuave);
+    font-family: 'Montserrat B';
+    font-size: 16px;
+    background-color: transparent;
+    border: var(--color-RedSuave) 2px solid;
+    border-radius: 9999px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    box-shadow: 0px 0px 10px var(--color-RedSuave);
+    transition: all 0.3s ease;
+}
+
+.btn-contato:hover {
+    background-color: var(--color-RedSuave);
+    color: var(--color-Branco);
+}
+
+.btn-contato:hover img {
+    filter: brightness(0) invert(1);
+}

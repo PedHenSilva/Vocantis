@@ -56,13 +56,13 @@
                         <img src="img/trophy.svg" alt="Ícone de Troféu">
                     </div>
                     <div>
-                        <h2>Perfil Empreendedor</h2>
-                        <h3>O Líder Ambicioso</h3>
-                        <p>Você tem um espírito empreendedor natural, com visão de negócios e uma grande capacidade de liderança para tomar riscos calculados. Sua ambição e determinação são seus diferenciais.</p>
+                        <h2 id="profileName">Perfil Empreendedor</h2>
+                        <h3 id="nickname">O Líder Ambicioso</h3>
+                        <p id="description">Você tem um espírito empreendedor natural, com visão de negócios e uma grande capacidade de liderança para tomar riscos calculados. Sua ambição e determinação são seus diferenciais.</p>
                     </div>
                 </div>
                 <div class="perfil-compatibilidade">
-                    <strong>100%</strong>
+                    <strong id="compability">100%</strong>
                     <p>Compatibilidade</p>
                     <img src="img/medal.svg" alt="Ícone de Medalha">
                 </div>
@@ -74,14 +74,14 @@
                         <div class="card-icon">
                             <img src="img/star.svg" alt="Ícone de Estrela">
                         </div>
-                        <h4>Suas Características</h4>
+                        <h4>Características</h4>
                     </div>
                     <ul class="lista-customizada">
-                        <li>Visão de negócios e oportunidades</li>
-                        <li>Capacidade de liderança natural</li>
-                        <li>Apetite para assumir riscos</li>
-                        <li>Habilidade para inovar e criar</li>
-                        <li>Ambição e determinação</li>
+                        <li id="chr1">Visão de negócios e oportunidades</li>
+                        <li id="chr2">Capacidade de liderança natural</li>
+                        <li id="chr3">Apetite para assumir riscos</li>
+                        <li id="chr4">Habilidade para inovar e criar</li>
+                        <li id="chr5">Ambição e determinação</li>
                     </ul>
                 </div>
 
@@ -90,37 +90,37 @@
                         <div class="card-icon">
                             <img src="img/trending-up.svg" alt="Ícone de Gráfico">
                         </div>
-                        <h4>Seus Perfis</h4>
+                        <h4>Perfis</h4>
                     </div>
                     <div class="perfis-lista">
                         <div class="perfil-item">
                             <label>Empreendedor</label>
                             <div class="progresso-barra">
-                                <div class="progresso-barra-fill" style="width: 100%;"></div>
+                                <div class="progresso-barra-fill" id="empreendedorScore" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="perfil-item">
                             <label>Analítico</label>
                             <div class="progresso-barra">
-                                <div class="progresso-barra-fill" style="width: 80%;"></div>
+                                <div class="progresso-barra-fill" id="analiticoScore" style="width: 80%;"></div>
                             </div>
                         </div>
                         <div class="perfil-item">
                             <label>Criativo</label>
                             <div class="progresso-barra">
-                                <div class="progresso-barra-fill" style="width: 75%;"></div>
+                                <div class="progresso-barra-fill" id="criativoScore" style="width: 75%;"></div>
                             </div>
                         </div>
                         <div class="perfil-item">
                             <label>Social</label>
                             <div class="progresso-barra">
-                                <div class="progresso-barra-fill" style="width: 43%;"></div>
+                                <div class="progresso-barra-fill" id="socialScore" style="width: 43%;"></div>
                             </div>
                         </div>
                         <div class="perfil-item">
-                            <label>Educacional</label>
+                            <label>Prático</label>
                             <div class="progresso-barra">
-                                <div class="progresso-barra-fill" style="width: 50%;"></div>
+                                <div class="progresso-barra-fill" id="praticoScore" style="width: 43%;"></div>
                             </div>
                         </div>
                     </div>
@@ -136,24 +136,24 @@
                 </div>
                 <div class="cursos-grid">
                     <div class="curso-item">
-                        <h5>Administração</h5>
-                        <p>Alta compatibilidade com seu perfil</p>
+                        <h5 id="crs1">Administração</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
                     </div>
                     <div class="curso-item">
-                        <h5>Gestão Empresarial</h5>
-                        <p>Alta compatibilidade com seu perfil</p>
+                        <h5 id="crs2">Gestão Empresarial</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
                     </div>
                     <div class="curso-item">
-                        <h5>Marketing</h5>
-                        <p>Alta compatibilidade com seu perfil</p>
+                        <h5 id="crs3">Marketing</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
                     </div>
                     <div class="curso-item">
-                        <h5>Comércio Exterior</h5>
-                        <p>Alta compatibilidade com seu perfil</p>
+                        <h5 id="crs4">Comércio Exterior</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
                     </div>
                     <div class="curso-item">
-                        <h5>Gestão Financeira</h5>
-                        <p>Alta compatibilidade com seu perfil</p>
+                        <h5 id="crs5">Gestão Financeira</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
                     </div>
                 </div>
             </section>
@@ -268,7 +268,7 @@
     </footer>
 
     <script src="assets/js/script_preloader.js"></script>
-    <script src="assets/js/script_preloader.js"></script>
+    <script src="assets/js/resultado.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
