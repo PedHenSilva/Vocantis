@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Resultado - Vocantis</title>
+
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/pages/resultado.css">
+    <link rel="stylesheet" href="assets/css/global/loading.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dis/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest"/>
+
+</head>
+
+<body class="pagina-resultado">
+
+    <div class="preloader" id="preloader">
+  		<div class="loader" id="loader"></div>
+	</div>
+    
+    <header>
+        <figure>
+            <img src="img/Vocantis Logo.svg" alt="Logo">
+        </figure>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="calendário.html">Calendário</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+       <a href="cadastro.html">
+        <button class="btn-gradiente" type="button">Começar Agora</button>
+        </a>
+    </header>
+
+    <main>
+        <div class="container-resultado">
+
+            <section class="resultado-titulo">
+                <h1>Seu Resultado</h1>
+                <p>Parabéns! Você descobriu seu perfil vocacional.</p>
+            </section>
+
+            <section class="card-perfil-principal">
+                <div class="perfil-info">
+                    <div class="perfil-icon">
+                        <img src="img/trophy.svg" alt="Ícone de Troféu">
+                    </div>
+                    <div>
+                        <h2 id="profileName">Perfil Empreendedor</h2>
+                        <h3 id="nickname">O Líder Ambicioso</h3>
+                        <p id="description">Você tem um espírito empreendedor natural, com visão de negócios e uma grande capacidade de liderança para tomar riscos calculados. Sua ambição e determinação são seus diferenciais.</p>
+                    </div>
+                </div>
+                <div class="perfil-compatibilidade">
+                    <strong id="compability">100%</strong>
+                    <p>Compatibilidade</p>
+                    <img src="img/medal.svg" alt="Ícone de Medalha">
+                </div>
+            </section>
+
+            <section class="grid-dois-cards">
+                <div class="card-detalhes">
+                    <div class="card-titulo">
+                        <div class="card-icon">
+                            <img src="img/star.svg" alt="Ícone de Estrela">
+                        </div>
+                        <h4>Características</h4>
+                    </div>
+                    <ul class="lista-customizada">
+                        <li id="chr1">Visão de negócios e oportunidades</li>
+                        <li id="chr2">Capacidade de liderança natural</li>
+                        <li id="chr3">Apetite para assumir riscos</li>
+                        <li id="chr4">Habilidade para inovar e criar</li>
+                        <li id="chr5">Ambição e determinação</li>
+                    </ul>
+                </div>
+
+                <div class="card-detalhes">
+                    <div class="card-titulo">
+                        <div class="card-icon">
+                            <img src="img/trending-up.svg" alt="Ícone de Gráfico">
+                        </div>
+                        <h4>Perfis</h4>
+                    </div>
+                    <div class="perfis-lista">
+                        <div class="perfil-item">
+                            <label>Empreendedor</label>
+                            <div class="progresso-barra">
+                                <div class="progresso-barra-fill" id="empreendedorScore" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="perfil-item">
+                            <label>Analítico</label>
+                            <div class="progresso-barra">
+                                <div class="progresso-barra-fill" id="analiticoScore" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="perfil-item">
+                            <label>Criativo</label>
+                            <div class="progresso-barra">
+                                <div class="progresso-barra-fill" id="criativoScore" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="perfil-item">
+                            <label>Social</label>
+                            <div class="progresso-barra">
+                                <div class="progresso-barra-fill" id="socialScore" style="width: 43%;"></div>
+                            </div>
+                        </div>
+                        <div class="perfil-item">
+                            <label>Prático</label>
+                            <div class="progresso-barra">
+                                <div class="progresso-barra-fill" id="praticoScore" style="width: 43%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-cursos-recomendados">
+                <div class="card-titulo">
+                    <div class="card-icon">
+                        <img src="img/briefcase.svg" alt="Ícone de Maleta">
+                    </div>
+                    <h4>Cursos Recomendados para Você</h4>
+                </div>
+                <div class="cursos-grid">
+                    <div class="curso-item">
+                        <h5 id="crs1">Administração</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
+                    </div>
+                    <div class="curso-item">
+                        <h5 id="crs2">Gestão Empresarial</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
+                    </div>
+                    <div class="curso-item">
+                        <h5 id="crs3">Marketing</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
+                    </div>
+                    <div class="curso-item">
+                        <h5 id="crs4">Comércio Exterior</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
+                    </div>
+                    <div class="curso-item">
+                        <h5 id="crs5">Gestão Financeira</h5>
+                        <p>Alta compatibilidade com o perfil.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resultado-cta">
+                <h4>Pronto para o próximo passo?</h4>
+                <p>Explore as formações de Fatec e Etecs que combinam com seu perfil.</p>
+                <div class="cta-botoes">
+                    <a href="cursos.html" style="text-decoration: none;">
+                        <button class="btn-gradiente2" type="button">
+                            Explorar os Cursos
+                            <img src="img/arrow-right.svg" alt="Ícone Seta Direita">
+                        </button>
+                    </a>
+                    <a href="perguntas.html">
+                        <button class="btn-outline" type="button">
+                            Refazer Teste
+                        </button>
+                    </a>
+                </div>
+                <a href="#" class="link-compartilhar">Compartilhe seu resultado com amigos e familiares para que eles também possam descobrir suas vocações!</a>
+            </section>
+
+        </div> 
+    </main>
+
+    <footer>
+        <article class="footer-content">
+            <section class="col-1">
+                <div class="logo">
+                    <img src="img/Vocantis Logo-cropped.svg" alt="Logo">
+                </div>
+                <p>Plataforma que conecta você aos <br>melhores cursos e oportunidades <br>profissionais.</p>
+                <div class="socials">
+                    <div class="socials-icons">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="socials-icons">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </div>
+                    <div class="socials-icons">
+                        <img src="img/linkedin.svg" alt="Linkedin">
+                    </div>
+                    <a href="https://github.com/PedHenSilva/Vocantis">
+                        <div class="socials-icons">
+                            <img src="img/github.svg" alt="GitHub">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="col-2">
+                <h3>Links Rápidos</h3>
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="calendário.html">Calendário</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </section>
+
+            <section class="col-3">
+                <h3>Contato</h3>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/mail.svg" alt="Email">
+                    </div>
+                    <li>contato@vocantis.com.br</li>
+                </ul>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/phone.svg" alt="Email">
+                    </div>
+                    <li>(11) 3333-4444</li>
+                </ul>
+                <ul>
+                    <div class="contato-icon">
+                        <img src="img/map-pin.svg" alt="Email">
+                    </div>
+                    <li>Diadema, SP - Brasil</li>
+                </ul>
+            </section>
+
+            <section class="col-4">
+                <h3>Parceria</h3>
+                <div class="parceria">
+                    <div class="logo-cps">
+                        <img src="img/logo_cps_versao_br.png" alt="CentroPaulaSouza">
+                        <h4>Centro Paula Souza</h4>
+                    </div>
+                    <p>Em parceria com o Centro Paula Souza, oferecemos acesso aos melhores cursos técnicos e superiores.</p>
+                    <div class="link-cps">  
+                        <a href="#">
+                            Saiba Mais
+                            <img src="img/external-link.svg" alt="IconLink">
+                        </a>
+                    </div>  
+                </div>
+            </section>
+        </article>
+
+        <section class="burocracia">
+            <p>© 2025 Vocantis. Todos os direitos reservados.</p>
+            
+            <div class="politicas">
+                <p>Política de Privacidade</p>
+                <p>Termos de Uso</p>
+                <p>Cookies</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="assets/js/script_preloader.js"></script>
+    <script src="assets/js/resultado.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
