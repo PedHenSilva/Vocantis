@@ -45,7 +45,7 @@ document.querySelector("#btnCriarConta").addEventListener("click", async (event)
     dadosFormulario.append('senha', senha);
 
     try {
-        // Fazendo ligação com o servidor
+        // Enviando para o MySQL
         const response = await fetch('http://localhost:3000/cadastro', {
             method: 'POST',
             headers: {
@@ -85,6 +85,8 @@ document.querySelector("#btnCriarConta").addEventListener("click", async (event)
             icon: "error",
             background: "#1F2937",
             color: "#9CA3AF"
+        }).then(() => {
+            window.location.href = "perguntas.html"; 
         });
     }
 });
