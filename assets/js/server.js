@@ -16,7 +16,7 @@ app.use(express.static(caminhoRaiz));
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '2307', 
+    password: 'admin', 
     database: 'vocantis_db'
 });
 
